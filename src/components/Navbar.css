@@ -1,0 +1,68 @@
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3rem; /* Tinggi navbar */
+  padding: 0 1rem;
+  background-color: #000; /* Warna hitam */
+  border-bottom: 1px solid #333; /* Border bawah */
+  z-index: 1000; /* Agar tetap di atas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Section (Left Side) */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-image {
+  width: 2rem; /* Ukuran gambar */
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 500; /* Sedang, tidak terlalu bold */
+  color: #fff;
+}
+
+/* Navigation Links (Center) */
+.navbar-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+  background-color: #333; /* Hover effect */
+  color: #fff;
+}
+
+/* Logout Button (Right Side) */
+.logout-button {
+  background: #e60000; /* Warna merah */
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #cc0000; /* Hover merah lebih gelap */
+  color: #fff;
+}
